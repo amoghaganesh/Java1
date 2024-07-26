@@ -17,7 +17,7 @@ public class Cars {
         cars[13] = "Mazda6";
         cars[14] = "Subaru Legacy";
 
-        for (int i = 0; i < cars.length; i++) {
+        for (int i = cars.length-1; i >=0 ; i--) {
             System.out.println(cars[i]);
         }
     }
