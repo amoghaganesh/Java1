@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Ticket Booking</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2 class="mb-4">Railway Ticket Booking</h2>
+    <form action="booking" method="post">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="source">Source</label>
+            <select class="form-control" id="source" name="source" required>
+                <option>Ksr-Bangalore</option>
+                <option>Yeswantpura</option>
+                <option>Bangalore-Cant</option>
+                <option>Delhi</option>
+                <option>Rajasthan</option>
+                <option>Mumbai</option>
+                <option>Jammu</option>
+                <option>Chennai </option>
+                <option>Madurai</option>
+                <option>UP</option>
+                <option>Bihar</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="destination">Destination</label>
+            <select class="form-control" id="destination" name="destination" required>
+                <option>Bellary</option>
+                <option>Hubli</option>
+                <option>Koppal</option>
+                <option>Hospet</option>
+                <option>Mysore</option>
+                <option>Ksr-Bangalore</option>
+                <option>Yeswantpura</option>
+                <option>Bangalore-Cant</option>
+                <option>Hosur</option>
+                <option>Mandya</option>
+                <option>Bidar</option>
+                <option>Manglore</option>
+                <option>Belagavi</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="startDate">Start Date</label>
+                <input type="date" class="form-control" id="startDate" name="startDate" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="returnDate">Return Date</label>
+                <input type="date" class="form-control" id="returnDate" name="returnDate" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="seatType">Seat Type</label>
+            <select class="form-control" id="seatType" name="seatType" required>
+                <option>Second Sitting</option>
+                <option>Sleeper Class</option>
+                <option>Chair Car</option>
+                <option>Executive Chair Car</option>
+                <option>AC Three Tier</option>
+                <option>AC Two Tier</option>
+                <option>AC First Class</option>
+            </select>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="totalTicket">Total Tickets</label>
+                <input type="number" class="form-control" id="totalTicket" name="totalTicket" min="1" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="noOfMale">No of Male</label>
+                <input type="number" class="form-control" id="noOfMale" name="noOfMale" min="0" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="noOfFemale">No of Female</label>
+                <input type="number" class="form-control" id="noOfFemale" name="noOfFemale" min="0" required>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Confirm</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
